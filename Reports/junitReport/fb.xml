@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="25.934731">
+<testcase classname="" name="_2" time="12.214279">
+<failure message="java.lang.IndexOutOfBoundsException: index: 10, Size: 5&#13;&#10;&#9;at io.cucumber.datatable.DataTable.rangeCheck(DataTable.java:295)&#13;&#10;&#9;at io.cucumber.datatable.DataTable.access$800(DataTable.java:43)&#13;&#10;&#9;at io.cucumber.datatable.DataTable$ListView.get(DataTable.java:890)&#13;&#10;&#9;at io.cucumber.datatable.DataTable$ListView.get(DataTable.java:884)&#13;&#10;&#9;at org.stepdefinition.StepDefinition.enter_phone_number(StepDefinition.java:34)&#13;&#10;&#9;at ✽.enter phone number(src/test/resources/Feature files/FbForgotPassword.feature:10)&#13;&#10;"><![CDATA[Given enter login page......................................................passed
+And maximize window.........................................................passed
+And click forgot password button............................................passed
+When enter phone number.....................................................failed
+And click search button.....................................................skipped
+Then recover page...........................................................skipped
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: index: 10, Size: 5
+	at io.cucumber.datatable.DataTable.rangeCheck(DataTable.java:295)
+	at io.cucumber.datatable.DataTable.access$800(DataTable.java:43)
+	at io.cucumber.datatable.DataTable$ListView.get(DataTable.java:890)
+	at io.cucumber.datatable.DataTable$ListView.get(DataTable.java:884)
+	at org.stepdefinition.StepDefinition.enter_phone_number(StepDefinition.java:34)
+	at ✽.enter phone number(src/test/resources/Feature files/FbForgotPassword.feature:10)
+]]></failure>
+</testcase>
+<testcase classname="" name="_2" time="4.914993">
+<failure message="java.lang.IndexOutOfBoundsException: Index: 5, Size: 4&#13;&#10;&#9;at java.util.ArrayList.rangeCheck(Unknown Source)&#13;&#10;&#9;at java.util.ArrayList.get(Unknown Source)&#13;&#10;&#9;at java.util.Collections$UnmodifiableList.get(Unknown Source)&#13;&#10;&#9;at org.stepdefinition.StepDefinition.enter_valid_email_and_invalid_password(StepDefinition.java:57)&#13;&#10;&#9;at ✽.enter valid email and invalid password(src/test/resources/Feature files/FbLogin.feature:11)&#13;&#10;"><![CDATA[Given enter fb login page...................................................passed
+When enter valid email and invalid password.................................failed
+And click login button......................................................skipped
+Then User have to be in invalid credentials page............................skipped
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 5, Size: 4
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at java.util.Collections$UnmodifiableList.get(Unknown Source)
+	at org.stepdefinition.StepDefinition.enter_valid_email_and_invalid_password(StepDefinition.java:57)
+	at ✽.enter valid email and invalid password(src/test/resources/Feature files/FbLogin.feature:11)
+]]></failure>
+</testcase>
+<testcase classname="" name="_3" time="4.439662">
+<system-out><![CDATA[Given enter fb login page...................................................passed
+When enter invalid email and valid password.................................passed
+And click login button......................................................passed
+Then User have to be in invalid credentials page............................passed
+]]></system-out>
+</testcase>
+<testcase classname="" name="_4" time="4.365797">
+<system-out><![CDATA[Given enter fb login page...................................................passed
+When enter invalid email and invalid password...............................passed
+And click login button......................................................passed
+Then User have to be in invalid credentials page............................passed
+]]></system-out>
+</testcase>
+</testsuite>
